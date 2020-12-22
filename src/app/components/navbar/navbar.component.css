@@ -1,0 +1,19 @@
+.nav-style {
+    background-color: lavender;
+    height: 89%;
+    width: 200px;
+    box-sizing: border-box;
+    padding-top: 0;
+}
+
+
+mat-list-item:hover {
+    background-color: cadetblue;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.nav-style .mat-list-item i {
+    padding-right: 12px;
+}
