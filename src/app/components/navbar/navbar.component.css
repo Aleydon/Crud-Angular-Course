@@ -11,6 +11,7 @@ mat-list-item:hover {
     background-color: cadetblue;
     color: #fff;
     cursor: pointer;
+    height: 65px;
 }
 
 

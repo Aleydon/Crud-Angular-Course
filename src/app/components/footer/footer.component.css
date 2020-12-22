@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    background-color: lavender;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    justify-content: flex-end;
+    height: 40px;
+}
+
+
+.footer span strong {
+    font-style: italic;
+}

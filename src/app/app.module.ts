@@ -28,7 +28,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MatToolbarModule,
     MatIconModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
