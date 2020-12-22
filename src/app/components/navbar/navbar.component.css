@@ -3,8 +3,12 @@
     height: 89%;
     width: 200px;
     box-sizing: border-box;
+}   
+
+
+.nav-style mat-list {
     padding-top: 0;
-}
+} 
 
 
 mat-list-item:hover {

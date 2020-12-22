@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule  } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MatIconModule,
     MatListModule,
     MatDividerModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
