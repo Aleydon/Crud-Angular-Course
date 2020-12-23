@@ -22,3 +22,13 @@ mat-list-item:hover {
 .nav-style .mat-list-item i {
     padding-right: 12px;
 }
+
+
+.nav-style .router-a {
+    color: black;
+}
+
+
+.nav-style .router-a:hover {
+    color: #fff;
+}

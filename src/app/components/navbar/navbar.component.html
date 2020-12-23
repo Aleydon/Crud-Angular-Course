@@ -1,9 +1,18 @@
 <mat-sidenav-container class="nav-style" mode="side" opened fixedInViewport="true">
     <mat-list>
-        <mat-list-item><i class="material-icons">home</i><a>Home</a></mat-list-item>
+        <mat-list-item>
+            <i class="material-icons">home</i>
+            <a routerLink="/home" class="router-a">Home</a>
+        </mat-list-item>
             <mat-divider></mat-divider>
-        <mat-list-item><i class="material-icons">storefront</i><a>Add to Drive</a></mat-list-item>
+        <mat-list-item>
+            <i class="material-icons">storefront</i>
+            <a routerLink="/store" class="router-a">Store</a>
+        </mat-list-item>
             <mat-divider></mat-divider>
-        <mat-list-item><i class="material-icons">settings</i><a>Settings</a></mat-list-item>
+        <mat-list-item>
+            <i class="material-icons">settings</i>
+            <a routerLink="/settings" class="router-a">Settings</a>
+        </mat-list-item>
     </mat-list>
 </mat-sidenav-container>
