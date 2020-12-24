@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './views/home/home.component';
 
 
 
@@ -21,6 +22,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HeaderComponent,
     FooterComponent,
     NavbarComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
