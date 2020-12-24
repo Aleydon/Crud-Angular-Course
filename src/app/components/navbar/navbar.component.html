@@ -1,18 +1,17 @@
-<mat-sidenav-container class="nav-style" mode="side" opened fixedInViewport="true">
-    <mat-list>
-        <mat-list-item>
-            <i class="material-icons">home</i>
-            <a routerLink="/home" class="router-a">Home</a>
-        </mat-list-item>
-            <mat-divider></mat-divider>
-        <mat-list-item>
-            <i class="material-icons">storefront</i>
-            <a routerLink="/store" class="router-a">Store</a>
-        </mat-list-item>
-            <mat-divider></mat-divider>
-        <mat-list-item>
-            <i class="material-icons">settings</i>
-            <a routerLink="/settings" class="router-a">Settings</a>
-        </mat-list-item>
-    </mat-list>
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/"><i class="material-icons">home</i>Home</a>
+            <a mat-list-item  routerLink="/products"><i class="material-icons">storefront</i>Products</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+    <mat-sidenav-content>
+        <app-home></app-home>
+    </mat-sidenav-content>
+
 </mat-sidenav-container>
