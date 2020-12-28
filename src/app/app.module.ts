@@ -15,6 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
+import { ProductCreateComponent } from './components/product-create/product-create.component';
 
 
 
@@ -26,6 +27,7 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
     NavbarComponent,
     HomeComponent,
     ProductCrudComponent,
+    ProductCreateComponent,
   ],
   imports: [
     BrowserModule,
