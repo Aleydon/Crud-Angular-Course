@@ -7,12 +7,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './views/home/home.component';
+import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 
 
 
@@ -23,6 +25,7 @@ import { HomeComponent } from './views/home/home.component';
     FooterComponent,
     NavbarComponent,
     HomeComponent,
+    ProductCrudComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,7 @@ import { HomeComponent } from './views/home/home.component';
     MatListModule,
     MatDividerModule,
     MatSidenavModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
