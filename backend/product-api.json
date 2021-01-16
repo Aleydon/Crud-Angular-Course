@@ -1,0 +1,19 @@
+{
+	"products" : [
+		{
+			"id" : 1,
+			"name" : "Caneta Preta",
+			"price" : 5.89
+		},
+		{
+			"id": 2,
+			"name": "notebook Mac Pro",
+			"price": 12000.89
+		},
+		{
+			"id": 3,
+			"name": "Sansung Galaxy S3",
+			"price": 5.78
+		}
+	]
+}
