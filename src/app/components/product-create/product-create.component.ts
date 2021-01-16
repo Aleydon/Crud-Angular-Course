@@ -19,7 +19,7 @@ export class ProductCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  saveProduct(msg: string):void {
+  saveProduct(msg: string): void {
     this.snackbar.open(msg, 'X', {
       duration: 3000,
       horizontalPosition: 'right',
