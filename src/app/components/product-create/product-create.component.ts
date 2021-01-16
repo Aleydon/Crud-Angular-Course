@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ProductService } from './services/product.service';
-
+import { Product } from './model/product.model';
 
 
 @Component({
@@ -10,6 +10,12 @@ import { ProductService } from './services/product.service';
   styleUrls: ['./product-create.component.css']
 })
 export class ProductCreateComponent implements OnInit {
+
+  product: Product  = {
+      "id": 23,
+      "name": "Moto E 4 Plus",
+      "price": 900.00
+  }
 
   constructor(
               private productService: ProductService
@@ -20,7 +26,10 @@ export class ProductCreateComponent implements OnInit {
   }
   
   createProduct(): void {
-    this.productService.saveProduct('Product Created');
+    this.productService.create(this.product).subscribe(() => {
+      this.productService.saveProduct('Product Created');
+      this.productService.cancelProduct();
+    });
   }
 
   cancelProduct(): void {
