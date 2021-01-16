@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { ProductService } from './services/product.service';
 
 
 
@@ -12,22 +11,19 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ProductCreateComponent implements OnInit {
 
-  constructor(private router: Router,
-              private snackbar: MatSnackBar
+  constructor(
+              private productService: ProductService
   ) { }
+
 
   ngOnInit(): void {
   }
-
-  saveProduct(msg: string): void {
-    this.snackbar.open(msg, 'X', {
-      duration: 3000,
-      horizontalPosition: 'right',
-      verticalPosition: 'top'
-    })
+  
+  createProduct(): void {
+    this.productService.saveProduct('Product Created');
   }
 
-  cancelProduct():void {
-   this.router.navigate(['/products']); 
+  cancelProduct(): void {
+    this.productService.cancelProduct();
   }
 }

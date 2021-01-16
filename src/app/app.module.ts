@@ -18,7 +18,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './views/home/home.component';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { ProductCreateComponent } from './components/product-create/product-create.component';
-import { ProductCreateService } from './components/product-create/services/product-create.service';
+import { ProductService } from './components/product-create/services/product.service';
 
 
 
@@ -47,7 +47,7 @@ import { ProductCreateService } from './components/product-create/services/produ
     MatSnackBarModule,
   ],
   providers: [
-    ProductCreateService,
+    ProductService
   ],
   bootstrap: [AppComponent]
 })
